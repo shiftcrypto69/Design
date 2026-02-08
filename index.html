@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp Dev: Dari Windows ke Linux & Git</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.0/lucide.min.js"></script>
+    <style>
+        :root {
+            --accent: #3b82f6;
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f1f5f9;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* Hero Section - Gaya Iklan */
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            background: radial-gradient(circle at top, #1e3a8a 0%, #0f172a 100%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #60a5fa, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .badge {
+            background: rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        /* Grid Kandungan */
+        .container {
+            max-width: 1000px;
+            margin: -50px auto 50px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid #334155;
+            padding: 30px;
+            border-radius: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent);
+        }
+
+        .card h3 {
+            color: var(--accent);
+            margin-top: 15px;
+        }
+
+        .card code {
+            display: block;
+            background: #000;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: #10b981;
+        }
+
+        .cta-button {
+            background: var(--accent);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+            border-top: 1px solid #334155;
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <span class="badge">Kemasukan 2026 • Percuma</span>
+    <h1>Kuasai Linux & Git <br> Macam Pro.</h1>
+    <p>Jangan sekadar guna Windows. Bina kuasa "Developer" anda dengan WSL-Ubuntu dan pengurusan kod GitHub yang efisien.</p>
+    <a href="#belajar" class="cta-button">Mula Belajar Sekarang</a>
+</section>
+
+<div class="container" id="belajar">
+    <div class="card">
+        <h3>🐧 WSL & Ubuntu Setup</h3>
+        <p>Tukar Shell Windows anda menjadi kuasa Linux dalam 1 minit.</p>
+        <code>wsl --install -d Ubuntu</code>
+        <p><small>Belajar cara install dan setup akaun root pertama anda.</small></p>
+    </div>
+
+    <div class="card">
+        <h3>📂 Terminal Mastery</h3>
+        <p>Bosan guna mouse? Belajar cara kawal komputer guna papan kekunci.</p>
+        <code>mkdir web-projek && touch index.html</code>
+        <p><small>Asas CRUD fail dan navigasi direktori Linux.</small></p>
+    </div>
+
+    <div class="card">
+        <h3>🚀 GitHub Workflow</h3>
+        <p>Hubungkan komputer local anda dengan dunia luar.</p>
+        <code>git push origin main</code>
+        <p><small>Belajar Git Pull, Commit, dan Push tanpa pening kepala.</small></p>
+    </div>
+</div>
+
+<footer>
+    <p>Projek ini adalah Open Source. Sila Fork di GitHub untuk rujukan.</p>
+</footer>
+
+</body>
+</html>
